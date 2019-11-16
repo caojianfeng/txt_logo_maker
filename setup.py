@@ -13,12 +13,12 @@ from setuptools import setup, find_packages  # 这个包没有的可以pip一下
 setup(
     name="zk_logo_maker",
     version="1.0.0",
-    keywords=("pip", "SICA", "featureextraction"),
+    keywords=("pip", "zk_logo_maker", "featureextraction"),
     description="An feature extraction algorithm",
     long_description="An feature extraction algorithm, improve the FastICA",
     license="MIT Licence",
 
-    url="https://github.com/JeffreyCao/zk_logo_maker",  # 项目相关文件地址，一般是github
+    url="https://github.com/caojianfeng/zk_logo_maker",  # 项目相关文件地址，一般是github
     author="JeffreyCao",
     author_email="jeffreycao1024@gmail.com",
 
