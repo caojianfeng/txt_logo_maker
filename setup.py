@@ -13,7 +13,7 @@ import setuptools
 
 setuptools.setup(
     name="zk_logo_maker",
-    version="1.0.0",
+    version="1.0.1",
     keywords=("pip", "zk_logo_maker"),
     description="Tool to make zhike logos",
     long_description="Tool to make zhike logos",
