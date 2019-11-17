@@ -7,7 +7,7 @@ __title__ = "zk-logo-maker"
 __summary__ = "create logo for zhike"
 __uri__ = "https://github.com/caojianfeng/zk_logo_maker"
 
-__version__ = "1.0.3"
+__version__ = "1.0.5"
 
 __author__ = "JeffreyCao"
 __email__ = "je255reycao@stufft.io"

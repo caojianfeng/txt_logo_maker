@@ -2,4 +2,6 @@
 *.pyc
 .vscode
 .DS_Store
-dist/
+dist/*
+*.egg-info/*
+build/*

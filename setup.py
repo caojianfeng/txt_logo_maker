@@ -13,7 +13,7 @@ import setuptools
 
 setuptools.setup(
     name="zk_logo_maker",
-    version="1.0.2",
+    version="1.0.4",
     keywords=("pip", "zk_logo_maker"),
     description="Tool to make zhike logos",
     long_description="Tool to make zhike logos",
@@ -33,5 +33,11 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6'
+    data_files=[('fonts', ['fonts/ZhenyanGB.ttf'])],
+    python_requires='>=3.6',
+    entry_points={
+        'console_scripts': [
+            'zk-logo-maker = zk_logo_maker.__main__:main'
+        ]
+    }
 )

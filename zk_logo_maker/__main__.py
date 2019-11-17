@@ -18,7 +18,7 @@ SUB_TITLE = u'智课'
 # FONT_FILE_NAME = 'HappyZcool-2016.ttf'
 # FONT_FILE_NAME = 'zcoolqinkehuangyouti.ttf'
 # FONT_FILE_NAME = 'lianmengqiyilushuaizhengruiheiti.ttf'
-FONT_FILE_NAME = 'ZhenyanGB.ttf'
+FONT_FILE_NAME = 'fonts/ZhenyanGB.ttf'
 
 
 def draw_zk_bg():
@@ -51,7 +51,7 @@ def count_length(title):
     return len
 
 
-if __name__ == "__main__":
+def main():
     param_len = len(sys.argv)
 
     if param_len < 2:
@@ -89,3 +89,7 @@ if __name__ == "__main__":
     logo_size = int(LOGO_SIZE/ANTIALIAS_SIZE)
     img = img.resize((logo_size, logo_size), Image.ANTIALIAS)
     img.save(file_path, 'PNG')
+
+
+if __name__ == "__main__":
+    main()
