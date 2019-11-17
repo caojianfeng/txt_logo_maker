@@ -13,7 +13,7 @@ COLOR_MAIN = '#268bf1'
 COLOR_SECOND = '#ffffff'
 FONT_MAIN_SUM = 840*ANTIALIAS_SIZE
 FONT_SIZE_SUB = 104*ANTIALIAS_SIZE
-SUB_TITLE = u'智课▷'
+SUB_TITLE = u'智课'
 # https://www.zcool.com.cn/article/ZNDg2Mzg4.html
 # FONT_FILE_NAME = 'HappyZcool-2016.ttf'
 # FONT_FILE_NAME = 'zcoolqinkehuangyouti.ttf'
