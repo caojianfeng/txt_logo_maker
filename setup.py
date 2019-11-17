@@ -13,7 +13,7 @@ import setuptools
 
 setuptools.setup(
     name="zk_logo_maker",
-    version="1.0.1",
+    version="1.0.2",
     keywords=("pip", "zk_logo_maker"),
     description="Tool to make zhike logos",
     long_description="Tool to make zhike logos",
@@ -26,7 +26,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     platforms="any",
-    install_requires=["pillow"],  # 这个项目需要的第三方库
+    install_requires=["Pillow"],  # 这个项目需要的第三方库
 
     classifiers=[
         "Programming Language :: Python :: 3",
