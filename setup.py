@@ -33,7 +33,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    data_files=[('fonts', ['fonts/ZhenyanGB.ttf'])],
+    data_files=[('ZhenyanGB.ttf', ['ZhenyanGB.ttf'])],
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [

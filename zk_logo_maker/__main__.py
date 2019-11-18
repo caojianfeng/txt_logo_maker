@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- #文件也为UTF-8
 import sys
+import os
 from PIL import Image, ImageDraw, ImageFont
 
 ANTIALIAS_SIZE = 16
@@ -14,11 +15,19 @@ COLOR_SECOND = '#ffffff'
 FONT_MAIN_SUM = 840*ANTIALIAS_SIZE
 FONT_SIZE_SUB = 104*ANTIALIAS_SIZE
 SUB_TITLE = u'智课'
+
+
 # https://www.zcool.com.cn/article/ZNDg2Mzg4.html
 # FONT_FILE_NAME = 'HappyZcool-2016.ttf'
 # FONT_FILE_NAME = 'zcoolqinkehuangyouti.ttf'
 # FONT_FILE_NAME = 'lianmengqiyilushuaizhengruiheiti.ttf'
-FONT_FILE_NAME = 'fonts/ZhenyanGB.ttf'
+
+FONT_FILE_NAME = 'ZhenyanGB.ttf'
+
+
+def brother_path(file_name):
+    return os.path.join(os.path.abspath(
+        os.path.dirname(__file__)), file_name)
 
 
 def draw_zk_bg():
@@ -69,7 +78,10 @@ def main():
 
     title_len = len(title)
     main_title_font_size = int(FONT_MAIN_SUM/title_len)
-    font = ImageFont.truetype(FONT_FILE_NAME, main_title_font_size)
+    font = ImageFont.truetype(
+        brother_path(FONT_FILE_NAME),
+        main_title_font_size
+    )
     img = draw_zk_bg()
     text_horzontal_center(
         title,
@@ -78,7 +90,10 @@ def main():
         img,
         MAIN_POS)
 
-    font_sub = ImageFont.truetype(FONT_FILE_NAME, FONT_SIZE_SUB)
+    font_sub = ImageFont.truetype(
+        brother_path(FONT_FILE_NAME),
+        FONT_SIZE_SUB
+    )
     text_horzontal_center(
         SUB_TITLE,
         COLOR_MAIN,

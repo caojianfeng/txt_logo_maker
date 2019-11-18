@@ -1,4 +1,3 @@
-MANIFEST.in
 setup.py
 zk_logo_maker/__init__.py
 zk_logo_maker/__main__.py
