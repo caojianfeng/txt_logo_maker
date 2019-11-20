@@ -13,27 +13,28 @@ import setuptools
 
 setuptools.setup(
     name="zk_logo_maker",
-    version="1.0.4",
+    version="1.0.5",
     keywords=("pip", "zk_logo_maker"),
     description="Tool to make zhike logos",
     long_description="Tool to make zhike logos",
     license="MIT Licence",
 
-    url="https://github.com/caojianfeng/zk_logo_maker",  # 项目相关文件地址，一般是github
+    url="https://github.com/caojianfeng/zk_logo_maker",
     author="JeffreyCao",
     author_email="jeffreycao1024@gmail.com",
 
     packages=setuptools.find_packages(),
     include_package_data=True,
+    package_data={
+        'zk_logo_maker': ['ZhenyanGB.ttf'],
+    },
     platforms="any",
-    install_requires=["Pillow"],  # 这个项目需要的第三方库
-
+    install_requires=["Pillow"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    data_files=[('ZhenyanGB.ttf', ['ZhenyanGB.ttf'])],
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
